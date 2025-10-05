@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Protected Gaming Zone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://img.freepik.com/free-vector/emoticons-with-empty-space-background_79603-1023.jpg?t=st=1759523932~exp=1759527532~hmac=0ace8086f427dea3c26ebfade4bbe059d99329df38bd44db9cc147e3d9965f02'); /* 🔁 Replace with your image link */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      text-align: center;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    input[type="password"] {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin-top: 10px;
+      background: #00ffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #ffcc00;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 8px 16px;
+      background: #00ffff;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      font-size: 14px;
+    }
+
+    a.back:hover {
+      background: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔒for friends Access</h1>
+    <p>This page is protected. Enter the password to continue.</p>
+
+    <input type="password" id="password" placeholder="Enter password">
+    <br>
+    <button onclick="checkPassword()">Unlock</button>
+    <div class="error" id="error"></div>
+
+    <a class="back" href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      const correctPassword = "as3"; // Change this to your secret password
+
+      if (input === correctPassword) {
+        window.location.href = "freefire.html";
+      } else {
+        document.getElementById("error").textContent = "Wrong password!accces denied.";
+      }
+    }
+  </script>
+
+</body>
+</html>
