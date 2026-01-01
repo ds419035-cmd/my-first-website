@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School Life | Anshit</title>
+  <link rel="stylesheet" href="index.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://ambikaprasadmemorial.com/ambika_admin/gallery/882813979-IMG_7365%20(1).jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-    }
-
-    .container {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 60px 20px;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin: 10px auto;
-      max-width: 700px;
-    }
-
-    ul {
+    .teacher-list {
       list-style: none;
-      padding: 0;
-      max-width: 600px;
-      margin: 20px auto;
+      margin-top: 2rem;
+      text-align: left;
     }
 
-    li {
-      background: rgba(255, 255, 255, 0.1);
-      margin: 10px;
-      padding: 10px;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
+    .teacher-item {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      padding: 1.5rem;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
     }
 
-    li:hover {
-      transform: scale(1.05);
-      background: rgba(255, 255, 255, 0.2);
+    .teacher-item:hover {
+      border-color: var(--accent-primary);
+      background: rgba(0, 242, 255, 0.05);
     }
 
-    a.back {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #00ffff;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s ease;
+    .teacher-name {
+      color: var(--accent-primary);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
     }
 
-    a.back:hover {
-      background: #ffcc00;
+    .school-info {
+      font-style: italic;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>My School Life</h1>
-    <p>I study in Class 7 at <strong>Ambika Prashad Memorial Public School</strong>, Rajdhani marg shuklagunj (unnao)  . It’s more than just a school — it’s where I grow, learn, and laugh every day.</p>
+  <main class="container">
+    <div class="glass-card animate-fade-in">
+      <header>
+        <h1>My School Life</h1>
+        <p class="school-info">Class 7 | Ambika Prashad Memorial Public School, Unnao</p>
+      </header>
 
-    <h2>🌟 My Favorite Teachers</h2>
-    <ul>
-      <li><strong>Archana Ma’am</strong> — <u>[my class teaacher]</u> always encouraging and kind, she makes learning feel easy and fun.</li>
-      <li><strong>Ranjit Sir</strong> — our music teacher, who helped me discover my love for singing and performing.</li>
-      <li><strong>Anil Sir</strong> — inspires me to think big, stay sharp, and always be curious.</li>
-    </ul>
+      <section>
+        <p>It’s more than just a school — it’s where I grow, learn, and laugh every day. The environment inspires me to
+          be my best self.</p>
 
-    <a class="back" href="index.html">← Back to Home</a>
-  </div>
+        <h2>🌟 My Favorite Teachers</h2>
+        <ul class="teacher-list">
+          <li class="teacher-item">
+            <span class="teacher-name">Archana Ma’am</span>
+            My class teacher who is always encouraging and kind. She makes learning feel easy and fun.
+          </li>
+          <li class="teacher-item">
+            <span class="teacher-name">Ranjit Sir</span>
+            Our music teacher who helped me discover my love for singing and performing.
+          </li>
+          <li class="teacher-item">
+            <span class="teacher-name">Anil Sir</span>
+            Inspires me to think big, stay sharp, and always stay curious about the world.
+          </li>
+        </ul>
+      </section>
+
+      <div style="margin-top: 3rem;">
+        <a class="btn btn-secondary" href="index.html">← Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anshit. Built with passion.</p>
+  </footer>
 
 </body>
+
 </html>
